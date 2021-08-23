@@ -42,9 +42,7 @@ func TestStackPop(t *testing.T) {
 func TestStackPopWhenEmpty(t *testing.T) {
 	var s Stack
 
-	_, erro := s.pop()
-
-	if erro == nil {
+	if _, erro := s.pop(); erro == nil {
 		t.Fatalf("Stack should had thrown an error")
 	}
 }
