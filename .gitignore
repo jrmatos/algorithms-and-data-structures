@@ -1,2 +1,5 @@
-python/__pycache__
 go/*.out
+javascript/node_modules
+javascript/package-lock.json
+python/__pycache__
+
