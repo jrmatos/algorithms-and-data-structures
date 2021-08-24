@@ -1,4 +1,4 @@
-class Stack {
+export default class Stack {
     elements = []
 
     push(element) {
@@ -25,5 +25,3 @@ class Stack {
         return this.elements.length;
     }
 }
-
-module.exports = Stack;
