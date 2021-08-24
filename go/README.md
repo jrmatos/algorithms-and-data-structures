@@ -1,4 +1,4 @@
-## Stack
+## Go
 
 
 Implementations in Go.
