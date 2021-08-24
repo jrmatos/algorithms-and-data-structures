@@ -12,7 +12,6 @@ func (s *Stack) push(element interface{}) {
 }
 
 func (s *Stack) pop() (interface{}, error) {
-
 	if !s.isEmpty() {
 		topIndex, topElement := s.getTop()
 		s.elements = s.elements[:topIndex]
