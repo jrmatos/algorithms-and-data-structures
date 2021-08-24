@@ -28,10 +28,29 @@ describe("Stack", () => {
         expect(removedElement).toBe(100);
     });
 
+    test("should peek", () => {
+        stack.push(1);
+        stack.push(20);
+        stack.push(30);
+
+        const expectedElement = 30;
+
+        const element = stack.peek();
+
+        expect(element).toBe(expectedElement);
+    });
 
     test("should not pop empty stack", () => {
         const wrapper = () => {
             stack.pop();
+        }
+
+        expect(wrapper).toThrow('Stack is empty');
+    });
+
+    test("should not peek empty stack", () => {
+        const wrapper = () => {
+            stack.peek();
         }
 
         expect(wrapper).toThrow('Stack is empty');

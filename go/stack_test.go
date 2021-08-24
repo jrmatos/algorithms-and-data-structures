@@ -1,8 +1,6 @@
 package stack
 
-import (
-	"testing"
-)
+import "testing"
 
 func TestStackPush(t *testing.T) {
 	var s Stack
@@ -39,10 +37,38 @@ func TestStackPop(t *testing.T) {
 	}
 }
 
+func TestStackPeek(t *testing.T) {
+	var s Stack
+
+	s.push(1)
+	s.push(10)
+
+	index, element, _ := s.peek()
+
+	expectedIndex := 1
+	expectedElement := 10
+
+	if index != expectedIndex {
+		t.Fatalf("Expected %d Received %d", expectedIndex, index)
+	}
+
+	if element != expectedElement {
+		t.Fatalf("Expected %d Received %d", expectedElement, element)
+	}
+}
+
 func TestStackPopWhenEmpty(t *testing.T) {
 	var s Stack
 
 	if _, erro := s.pop(); erro == nil {
+		t.Fatalf("Stack should had thrown an error")
+	}
+}
+
+func TestStackPeekWhenEmpty(t *testing.T) {
+	var s Stack
+
+	if _, _, erro := s.peek(); erro == nil {
 		t.Fatalf("Stack should had thrown an error")
 	}
 }

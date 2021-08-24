@@ -12,14 +12,15 @@ func (s *Stack) push(element interface{}) {
 }
 
 func (s *Stack) pop() (interface{}, error) {
-	if !s.isEmpty() {
-		topIndex, topElement := s.getTop()
-		s.elements = s.elements[:topIndex]
-	
-		return topElement, nil
+	topIndex, topElement, erro := s.peek()
+
+	if erro != nil {
+		return nil, erro
 	}
 
-	return nil, errors.New("Stack is empty")
+	s.elements = s.elements[:topIndex]
+
+	return topElement, nil
 }
 
 func (s Stack) isEmpty() bool {
@@ -30,8 +31,12 @@ func (s Stack) size() int {
 	return len(s.elements)
 }
 
-func (s Stack) getTop() (int, interface{}) {
+func (s Stack) peek() (int, interface{}, error) {
+	if s.isEmpty() {
+		return 0, nil, errors.New("empty stack")
+	}
+
 	lastIndex := s.size() - 1
 
-	return lastIndex, s.elements[lastIndex]
+	return lastIndex, s.elements[lastIndex], nil
 }
