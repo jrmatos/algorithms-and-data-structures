@@ -40,6 +40,14 @@ describe('LinkedList', () => {
         expect(linkedList.count).toBe(1);
     });
 
+    test("should remove at non existing position", () => {
+        linkedList.push(1);
+        linkedList.push(7);
+        const removeAtResult = linkedList.removeAt(10);
+
+        expect(removeAtResult).toBe(undefined);
+    });
+
     test("should insert at first position", () => {
         const insertResult = linkedList.insert(555, 0);
 
@@ -74,4 +82,13 @@ describe('LinkedList', () => {
 
         expect(indexOfResult).toBe(-1);
     });
+
+    test("should remove existing element", () => {
+        linkedList.push(1);
+        linkedList.push(7);
+
+        const removeResult = linkedList.remove(7);
+
+        expect(removeResult).toBe(7)
+    })
 });

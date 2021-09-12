@@ -98,8 +98,13 @@ export default class LinkedList {
 
             current = current.next;
         }
-        
+
         return -1;
+    }
+
+    remove(element) {
+        const index = this.indexOf(element);
+        return this.removeAt(index);
     }
 
     isValidIndex(index) {
