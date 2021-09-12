@@ -107,6 +107,18 @@ export default class LinkedList {
         return this.removeAt(index);
     }
 
+    size() {
+        return this.count;
+    }
+
+    isEmpty() {
+        return this.size() === 0;
+    }
+
+    getHead() {
+        return this.head;
+    }
+
     isValidIndex(index) {
         return index >= 0 && index <= this.count;
     }

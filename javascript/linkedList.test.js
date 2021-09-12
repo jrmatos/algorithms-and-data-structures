@@ -90,5 +90,25 @@ describe('LinkedList', () => {
         const removeResult = linkedList.remove(7);
 
         expect(removeResult).toBe(7)
-    })
+    });
+
+    test("should calculate size", () => {
+        linkedList.push(1);
+        linkedList.push(7);
+        linkedList.push(9);
+        linkedList.push(2);
+
+        expect(linkedList.size()).toBe(4);
+    });
+
+    test("should calculate isEmpty ", () => {
+        expect(linkedList.isEmpty()).toBe(true);
+        linkedList.push(2);
+        expect(linkedList.isEmpty()).toBe(false);
+    });
+
+    test("should calculate getHead", () => {
+        linkedList.push(2);
+        expect(linkedList.getHead().element).toBe(2);
+    });
 });
