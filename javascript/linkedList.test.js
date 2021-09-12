@@ -111,4 +111,16 @@ describe('LinkedList', () => {
         linkedList.push(2);
         expect(linkedList.getHead().element).toBe(2);
     });
+
+    test("should calculate toString", () => {
+        linkedList.push(2);
+        linkedList.push(6);
+        linkedList.push(1);
+        linkedList.push(8);
+        expect(linkedList.toString()).toBe('2,6,1,8');
+    });
+
+    test("should calculate toString when empty", () => {
+        expect(linkedList.toString()).toBe('');
+    });
 });
