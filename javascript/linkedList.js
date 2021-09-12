@@ -40,13 +40,8 @@ export default class LinkedList {
             if (index === 0) {
                 this.head = current.next;
             } else {
-                let previous;
-
-                for (let i = 0; i < index; i++) {
-                    previous = current;
-                    current = current.next;
-                }
-
+                const previous = this.getElementAt(index - 1);
+                current = previous.next;
                 // skip current in the list
                 previous.next = current.next;
             }
@@ -55,6 +50,19 @@ export default class LinkedList {
             return current.element;
         }
 
+        return undefined;
+    }
+
+    getElementAt(index) {
+        if (index >= 0 && index <= this.count) {
+            let node = this.head;
+
+            for (let i = 0; i < index && node != null; i++) {
+                node = node.next;
+            }
+
+            return node;
+        }
         return undefined;
     }
 }

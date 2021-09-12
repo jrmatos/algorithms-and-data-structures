@@ -15,6 +15,14 @@ describe('LinkedList', () => {
         expect(linkedList.head.next.element).toBe(7);
     });
 
+    test("should get node at position", () => {
+        linkedList.push(1);
+        linkedList.push(7);
+
+        expect(linkedList.getElementAt(0).element).toBe(1);
+        expect(linkedList.getElementAt(1).element).toBe(7);
+    });
+
     test("should remove at first position", () => {
         linkedList.push(1);
         linkedList.removeAt(0);
