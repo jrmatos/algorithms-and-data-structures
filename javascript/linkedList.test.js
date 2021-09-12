@@ -39,4 +39,21 @@ describe('LinkedList', () => {
         expect(linkedList.head.next).toBe(undefined);
         expect(linkedList.count).toBe(1);
     });
+
+    test("should insert at first position", () => {
+        const insertResult = linkedList.insert(555, 0);
+
+        expect(insertResult).toBe(true);
+        expect(linkedList.getElementAt(0).element).toBe(555);
+    });
+
+    test("should insert at middle position", () => {
+        linkedList.push(1);
+        linkedList.push(7);
+        linkedList.push(3);
+        const insertResult = linkedList.insert(555, 1);
+
+        expect(insertResult).toBe(true);
+        expect(linkedList.getElementAt(1).element).toBe(555);
+    });
 });

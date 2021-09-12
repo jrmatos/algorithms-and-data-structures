@@ -54,7 +54,7 @@ export default class LinkedList {
     }
 
     getElementAt(index) {
-        if (index >= 0 && index <= this.count) {
+        if (this.isValidIndex(index)) {
             let node = this.head;
 
             for (let i = 0; i < index && node != null; i++) {
@@ -64,5 +64,31 @@ export default class LinkedList {
             return node;
         }
         return undefined;
+    }
+
+    insert(element, index) {
+        if (this.isValidIndex(index)) {
+            const node = new Node(element);
+
+            if (index === 0) {
+                const current = this.head;
+                node.next = current;
+                this.head = node;
+            } else {
+                const previous = this.getElementAt(index - 1);
+                const current = previous.next;
+                previous.next = node;
+                node.next = current;
+            }
+
+            this.count++;
+            return true;
+        }
+
+        return false;
+    }
+
+    isValidIndex(index) {
+        return index >= 0 && index <= this.count;
     }
 }
