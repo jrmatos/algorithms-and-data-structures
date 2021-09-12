@@ -56,4 +56,22 @@ describe('LinkedList', () => {
         expect(insertResult).toBe(true);
         expect(linkedList.getElementAt(1).element).toBe(555);
     });
+
+    test("should indexOf existing element", () => {
+        linkedList.push(1);
+        linkedList.push(7);
+        linkedList.push(3);
+        const indexOfResult = linkedList.indexOf(7);
+
+        expect(indexOfResult).toBe(1);
+    });
+
+    test("should indexOf non existing element", () => {
+        linkedList.push(1);
+        linkedList.push(7);
+        linkedList.push(3);
+        const indexOfResult = linkedList.indexOf(999);
+
+        expect(indexOfResult).toBe(-1);
+    });
 });
