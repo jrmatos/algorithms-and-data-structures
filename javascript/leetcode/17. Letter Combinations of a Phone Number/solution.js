@@ -1,10 +1,3 @@
-function main() {
-    const digits = "23";
-    const combination = letterCombinations(digits);
-    
-    console.log(combination);
-}
-
 function letterCombinations (digits) {
     const result = [];
     
@@ -45,4 +38,7 @@ function letterCombinationsRecursive(result, digits, current, index, mapping) {
         
 }
 
-main();
+const digits = "23";
+const combination = letterCombinations(digits);
+
+console.log(combination);
