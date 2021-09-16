@@ -32,7 +32,3 @@ function convert(s, numRows) {
 
     return rows.join().replace(/,/g, '').replace(/#/g, ',');
 }
-
-// const result = convert("PAYPALISHIRING", 2);
-// const result = convert("Apalindromeisaword,phrase,number,orothersequenceofunitsthatcanbereadthesamewayineitherdirection,withgeneralallowancesforadjustmentstopunctuationandworddividers.", 1);
-// console.log(result);

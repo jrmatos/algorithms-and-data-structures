@@ -37,8 +37,3 @@ function letterCombinationsRecursive(result, digits, current, index, mapping) {
     }
         
 }
-
-const digits = "23";
-const combination = letterCombinations(digits);
-
-console.log(combination);
