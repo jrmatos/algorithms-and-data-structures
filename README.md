@@ -7,6 +7,7 @@ Personal implementations of algorithms and data structures in different language
 ## [JavaScript](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/stack.js)
 - [LinkedList](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/linkedList.js)
+- [BinarySearchTree](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/tree.js)
 
 ## [Python](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python)
 - [Binary Search](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/binary_search.py)
