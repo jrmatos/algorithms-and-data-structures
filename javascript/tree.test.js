@@ -79,7 +79,6 @@ describe("BinarySearchTree", () => {
     test("should search node", () => {
         tree.insert(11);
         tree.insert(5);
-
         tree.insert(5);
         tree.insert(7);
 
@@ -88,5 +87,28 @@ describe("BinarySearchTree", () => {
         expect(tree.search(7)).toBe(true);
         expect(tree.search(12)).toBe(false);
         expect(tree.search(15)).toBe(false);
+    });
+
+
+    test("should remove node", () => {
+        tree.insert(11);
+        tree.insert(5);
+        tree.insert(7);
+        tree.insert(12);
+        tree.insert(15);
+        tree.insert(2);
+        tree.insert(300);
+
+        tree.remove(5);
+        tree.remove(15);
+        tree.remove(300);
+
+        expect(tree.search(11)).toBe(true);
+        expect(tree.search(5)).toBe(false);
+        expect(tree.search(7)).toBe(true);
+        expect(tree.search(12)).toBe(true);
+        expect(tree.search(15)).toBe(false);
+        expect(tree.search(2)).toBe(true);
+        expect(tree.search(300)).toBe(false);
     });
 });
