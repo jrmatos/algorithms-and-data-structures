@@ -45,4 +45,9 @@ public class Stack<E> implements IStack<E> {
 
         return size;
     }
+
+    @Override
+    public Boolean isEmpty() {
+        return size() == 0;
+    }
 }

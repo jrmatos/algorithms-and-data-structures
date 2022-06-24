@@ -5,4 +5,5 @@ public interface IStack<E> {
     void pop();
     E peek();
     Integer size();
+    Boolean isEmpty();
 }

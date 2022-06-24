@@ -56,4 +56,15 @@ public class StackTest {
 
         assertEquals(stack.size(), 5);
     }
+
+    @Test
+    void isEmpty() {
+        IStack<Integer> stack = new Stack<>();
+
+        assertEquals(stack.isEmpty(), true);
+        stack.push(1);
+        assertEquals(stack.isEmpty(), false);
+        stack.pop();
+        assertEquals(stack.isEmpty(), true);
+    }
 }
