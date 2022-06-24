@@ -3,7 +3,7 @@ package leetcode;
 import leetcode.interfaces.ITwoSumEasy01;
 
 public class TwoSumEasy01BruceForce implements ITwoSumEasy01 {
-    // O(n)
+    // O(n^2)
     @Override
     public int[] twoSum(int[] nums, int target) {
         int[] ans = new int[2];
