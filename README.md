@@ -16,7 +16,7 @@ Personal implementations of algorithms and data structures in different language
 - [Selection Sort](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/selection_sort.py)
 - [Recursion](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/recursion.py)
 
-## [Java](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java)
+## [Java](https://github.com/jrmatos/algorithms-and-data-structures/tree/master/java/src/main/java)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java/src/main/java/algorithms/Stack.java)
 - [Leetcode - TwoSum O(n^2)](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java/src/main/java/leetcode/TwoSumEasy01BruceForce.java)
 - [Leetcode - TwoSum O(n)](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java/src/main/java/leetcode/TwoSumEasy01DP.java)
