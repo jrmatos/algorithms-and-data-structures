@@ -18,7 +18,7 @@ public class TwoSum01 {
         TwoSumEasy01DP twoSumEasy01DP = new TwoSumEasy01DP();
 
         assertArrayEquals(twoSumEasy01BruceForce.twoSum(sums, target), expectedAnswer);
-//        assertArrayEquals(twoSumEasy01DP.twoSum(sums, target), expectedAnswer);
+        assertArrayEquals(twoSumEasy01DP.twoSum(sums, target), expectedAnswer);
     }
 
 }
