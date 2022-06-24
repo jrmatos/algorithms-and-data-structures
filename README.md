@@ -17,5 +17,7 @@ Personal implementations of algorithms and data structures in different language
 - [Recursion](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/recursion.py)
 
 ## [Java](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java)
+- [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java/src/main/java/algorithms/Stack.java)
+
 ## [C++](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/cpp)
 - [Binary Search](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/cpp/binary_search.cpp)
