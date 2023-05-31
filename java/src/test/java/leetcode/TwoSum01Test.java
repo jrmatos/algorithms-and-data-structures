@@ -1,12 +1,11 @@
 package leetcode;
 
-import leetcode.interfaces.ITwoSumEasy01;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 
-public class TwoSum01 {
+public class TwoSum01Test {
 
     @Test
     public void testSolutions() {
