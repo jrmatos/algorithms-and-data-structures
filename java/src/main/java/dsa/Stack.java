@@ -1,7 +1,7 @@
-package algorithms;
+package dsa;
 
 
-import algorithms.interfaces.IStack;
+import dsa.interfaces.IStack;
 
 class StackNode<E> {
     E element;

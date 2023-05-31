@@ -1,6 +1,6 @@
-package algorithms;
+package dsa;
 
-import algorithms.interfaces.IStack;
+import dsa.interfaces.IStack;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

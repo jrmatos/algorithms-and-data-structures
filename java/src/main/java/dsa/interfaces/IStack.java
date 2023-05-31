@@ -1,4 +1,4 @@
-package algorithms.interfaces;
+package dsa.interfaces;
 
 public interface IStack<E> {
     void push(E element);
