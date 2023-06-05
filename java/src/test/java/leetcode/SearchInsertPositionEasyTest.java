@@ -27,4 +27,17 @@ public class SearchInsertPositionEasyTest {
             expectedAnswer, searchInsertPositionEasy.searchInsert(nums, target)
         );
     }
+
+    @Test
+    void testSolution3() {
+        int[] nums = { 1,3,5,6 };
+        int target = 7;
+        int expectedAnswer = 4;
+
+        SearchInsertPositionEasy searchInsertPositionEasy = new SearchInsertPositionEasy();
+
+        Assertions.assertEquals(
+                expectedAnswer, searchInsertPositionEasy.searchInsert(nums, target)
+        );
+    }
 }
