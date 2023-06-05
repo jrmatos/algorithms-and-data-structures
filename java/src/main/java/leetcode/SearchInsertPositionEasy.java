@@ -25,8 +25,9 @@ nums contains distinct values sorted in ascending order.
 -104 <= target <= 104
  */
 
+// O(n) linear solution
 public class SearchInsertPositionEasy {
-    public int searchInsert(int[] nums, int target) {
+    public static int searchInsert(int[] nums, int target) {
 
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] >= target) return i;

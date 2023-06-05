@@ -12,7 +12,9 @@ public class SearchInsertPositionEasyTest {
 
         SearchInsertPositionEasy searchInsertPositionEasy = new SearchInsertPositionEasy();
 
-        Assertions.assertEquals(expectedAnswer, searchInsertPositionEasy.searchInsert(nums, target));
+        Assertions.assertEquals(
+                expectedAnswer, SearchInsertPositionEasy.searchInsert(nums, target)
+        );
     }
 
     @Test
@@ -21,10 +23,9 @@ public class SearchInsertPositionEasyTest {
         int target = 2;
         int expectedAnswer = 1;
 
-        SearchInsertPositionEasy searchInsertPositionEasy = new SearchInsertPositionEasy();
 
         Assertions.assertEquals(
-            expectedAnswer, searchInsertPositionEasy.searchInsert(nums, target)
+                expectedAnswer, SearchInsertPositionEasy.searchInsert(nums, target)
         );
     }
 
@@ -34,10 +35,8 @@ public class SearchInsertPositionEasyTest {
         int target = 7;
         int expectedAnswer = 4;
 
-        SearchInsertPositionEasy searchInsertPositionEasy = new SearchInsertPositionEasy();
-
         Assertions.assertEquals(
-                expectedAnswer, searchInsertPositionEasy.searchInsert(nums, target)
+                expectedAnswer, SearchInsertPositionEasy.searchInsert(nums, target)
         );
     }
 }
