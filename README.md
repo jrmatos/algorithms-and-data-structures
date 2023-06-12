@@ -5,6 +5,7 @@ Personal implementations of algorithms and data structures in different language
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java/src/main/java/algorithms/Stack.java)
 - [Leetcode - TwoSum O(n^2)](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java/src/main/java/leetcode/TwoSumEasy01BruceForce.java)
 - [Leetcode - TwoSum O(n)](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java/src/main/java/leetcode/TwoSumEasy01DP.java)
+- [Leetcode - SearchInsertPosition O(n)](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/java/src/main/java/leetcode/SearchInsertPositionEasy.java)
 
 ## [JavaScript](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/stack.js)
