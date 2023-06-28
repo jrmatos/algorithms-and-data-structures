@@ -11,6 +11,11 @@ Personal implementations of algorithms and data structures in different language
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/stack.js)
 - [LinkedList](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/linkedList.js)
 - [BinarySearchTree](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/tree.js)
+- [Leetcode - Letter Combinations of a Phone Number](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/leetcode/17.%20Letter%20Combinations%20of%20a%20Phone%20Number/solution.js)
+- [Leetcode - Generate Parentheses](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/leetcode/22.%20Generate%20Parentheses/solution.js)
+- [Leetcode - ZigZag Conversion](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/leetcode/6.%20ZigZag%20Conversion/solution.js)
+- [Leetcode - Longest Turbulent Subarray](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/leetcode/978.%20Longest%20Turbulent%20Subarray/solution.js)
+- [Leetcode - Flatten Deeply Nested Array O(N^depth)](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/leetcode/2625.%20Flatten%20Deeply%20Nested%20Array/solution.js)
 
 ## [Python](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python)
 - [Binary Search](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/binary_search.py)
