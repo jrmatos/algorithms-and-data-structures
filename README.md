@@ -27,6 +27,8 @@ Personal implementations of algorithms and data structures in different language
 
 ## [Go](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go/stack.go)
+- [Insertion Sort](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go/insertion_sort.go)
+- [Selection Sort](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go/selection_sort.go)
 
 ## [C++](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/cpp)
 - [Binary Search](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/cpp/binary_search.cpp)
