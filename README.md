@@ -26,6 +26,7 @@ Personal implementations of algorithms and data structures in different language
 - [Recursion](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/recursion.py)
 - [Leetcode - Valid Parenthesis](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/valid_parenthesis.py)
 - [Leetcode - Best Time to Buy and Sell Stock](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/best_time_to_buy_stock.py)
+- [Leetcode - Palindrome Number](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/palindrome_number.py)
 
 ## [Go](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go/stack.go)
