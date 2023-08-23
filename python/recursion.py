@@ -12,7 +12,7 @@ def fat(x):
         return x * fat(x - 1)
 
 # 0 1 1 2 3 5 8 13
-def fibonacci(n, f):
+def fibonacci(n):
     if n <= 1:
         return n
     else:
