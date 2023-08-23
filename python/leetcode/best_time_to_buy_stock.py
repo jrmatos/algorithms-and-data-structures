@@ -1,6 +1,6 @@
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 
-# O(1)
+# O(n)
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         best_day_to_buy = 0
