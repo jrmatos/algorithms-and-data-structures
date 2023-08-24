@@ -18,7 +18,7 @@ class BST:
     def _insert_node(self, node: Node, key: int):
         if node is None:
             node = Node(key)
-            return
+            return # recursion base case (stop)
             
         elif key < node.key:
             if node.left is not None:
@@ -35,42 +35,41 @@ class BST:
         else:
             node.count += 1  # equal/duplicated... then increment count
 
-    def print_in_order(self):
-        self._print_in_order_node(self.root)
+    def in_order_traverse(self, callback: callable):
+        self._in_order_traverse_node(self.root, callback)
 
-    def print_pre_order(self):
-        self._print_pre_order(self.root)
+    def pre_order_traverse(self, callback: callable):
+        self._pre_order_traverse(self.root, callback)
 
-    def print_post_order(self):
-        self._print_post_order(self.root)
+    def post_order_traverse(self, callback: callable):
+        self._post_order_traverse(self.root, callback)
 
-    def _print_in_order_node(self, node: Node):
+    def _in_order_traverse_node(self, node: Node, callback: callable):
         if node is None:
             return  # recursion base case (stop)
 
-        self._print_in_order_node(node.left)
-        print(str(node.key) + "(" + str(node.count) + ")")
-        self._print_in_order_node(node.right)
+        self._in_order_traverse_node(node.left, callback)
+        callback(node)
+        self._in_order_traverse_node(node.right, callback)
 
-    def _print_pre_order(self, node: Node):
+    def _pre_order_traverse(self, node: Node, callback: callable):
         if node is None:
             return  # recursion base case (stop)
 
-        print(str(node.key) + "(" + str(node.count) + ")")
-        self._print_pre_order(node.left)
-        self._print_pre_order(node.right)
+        callback(node)
+        self._pre_order_traverse(node.left, callback)
+        self._pre_order_traverse(node.right, callback)
 
-    def _print_post_order(self, node: Node):
+    def _post_order_traverse(self, node: Node, callback: callable):
         if node is None:
             return  # recursion base case (stop)
 
-        self._print_post_order(node.left)
-        self._print_post_order(node.right)
-        print(str(node.key) + "(" + str(node.count) + ")")
+        self._post_order_traverse(node.left, callback)
+        self._post_order_traverse(node.right, callback)
+        callback(node)
 
 if __name__ == "__main__":
     tree = BST()
-
     tree.insert(4)
     tree.insert(2)
     tree.insert(1)
@@ -82,8 +81,9 @@ if __name__ == "__main__":
     tree.insert(7)
     tree.insert(10)
 
-    tree.print_in_order()
-    print("------")
-    tree.print_pre_order()
-    print("------")
-    tree.print_post_order()
+    print("in order")
+    tree.in_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
+    print("pre order")
+    tree.pre_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
+    print("post order")
+    tree.post_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
