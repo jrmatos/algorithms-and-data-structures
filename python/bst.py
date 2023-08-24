@@ -5,7 +5,6 @@ class Node:
         self.left: Node = None
         self.right: Node = None
 
-
 class BST:
     def __init__(self):
         self.root = None
@@ -35,8 +34,6 @@ class BST:
 
         else:
             node.count += 1  # equal/duplicated... then increment count
-
-        
 
     def print_in_order(self):
         self._print_in_order_node(self.root)
@@ -70,7 +67,6 @@ class BST:
         self._print_post_order(node.left)
         self._print_post_order(node.right)
         print(str(node.key) + "(" + str(node.count) + ")")
-
 
 if __name__ == "__main__":
     tree = BST()
