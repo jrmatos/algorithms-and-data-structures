@@ -12,6 +12,7 @@ def fat(x):
         return x * fat(x - 1)
 
 # 0 1 1 2 3 5 8 13
+# return the nth element of the fibonacci sequence
 def fibonacci(n):
     if n <= 1:
         return n
@@ -30,9 +31,9 @@ def sum_divide_to_conquer(l):
     
     return 0
 
-
-# regressive(20)
-# print(fat(5))
-# print(fibonacci(4))
-print(sum_divide_to_conquer([100,25, 25,30]))
+if __name__ == "__main__":
+    # regressive(20)
+    # print(fat(5))
+    print(fibonacci(7))
+    # print(sum_divide_to_conquer([100,25, 25,30]))
 
