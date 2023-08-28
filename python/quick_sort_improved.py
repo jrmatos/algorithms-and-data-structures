@@ -30,7 +30,5 @@ if __name__ == "__main__":
     assert len(input) == len(sorted)
     assert is_sorted(sorted)
 
-
     # print(is_sorted(input))
     # print(is_sorted(sorted))
-
