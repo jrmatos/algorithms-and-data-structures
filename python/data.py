@@ -23,6 +23,7 @@ def load_integers_from_file(filename):
             integers.append(int(line.strip()))
     return integers
 
-# Generate the input file
-# generate_input_file(output_filename, num_integers, min_value, max_value)
-# print(f"{num_integers} integers generated and saved to '{output_filename}'.")
+if __name__ == "__main__":
+    # Generate the input file
+    generate_input_file(output_filename, num_integers, min_value, max_value)
+    print(f"{num_integers} integers generated and saved to '{output_filename}'.")

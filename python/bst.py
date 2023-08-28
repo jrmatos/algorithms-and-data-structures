@@ -111,11 +111,16 @@ class BST:
 
         if key > node.key:
             return self._find_node(key, node.right)
+        
+    def _delete_node(self, node: Node):
+        node.left = None
+        node.right = None
     
-    def delete(self, key: int):
-        pass
-
     def delete_all(self):
+        self._in_order_traverse_node(self.root, self._delete_node)
+        self.root = None
+
+    def delete(self, key: int):
         pass
 
 if __name__ == "__main__":
@@ -147,5 +152,8 @@ if __name__ == "__main__":
     print("post order")
     tree.post_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
 
-    tree.delete(8)
+    # tree.delete(8)
     tree.delete_all()
+
+    print("in order")
+    tree.in_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
