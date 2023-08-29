@@ -121,50 +121,39 @@ class BST:
         node.right = None
 
     def delete(self, key: int) -> bool:
-        # check root
-        if self.root is None:
-            return False
-        elif self.root.key == key:
-            if self.root.count > 1:
-                self.root.count -= 1
+        if self._delete_node_by_key(self.root, key) is not None:
+            return True
+        return False
+
+    def _delete_node_by_key(self, node: Node, key: int) -> Node:
+        if node is None:
+            return None
+
+        if key < node.key:
+            node.left = self._delete_node_by_key(node.left, key)
+        elif key > node.key:
+            node.right = self._delete_node_by_key(node.right, key)
+        else:
+            if node.count > 1:
+                node.count -= 1
             else:
-                self.root = None
-            return True
-        
-        return self._delete_node_by_key(self.root, key)
+                # Node with only one child or no child
+                if node.left is None:
+                    return node.right
+                elif node.right is None:
+                    return node.left
 
-    def _delete_node_by_key(self, node: Node, key: int) -> bool:
-        # leaf
-        if node is None or (node.left is None and node.right is None):
-            return False
+                # Node with two children
+                min_right = self._get_min_node(node.right)
+                node.key = min_right
+                node.count -= 1
+                node.right = self._delete_node_by_key(node.right, min_right)
 
-        if node.left is not None and node.left.key == key:
-            if node.left.count > 1:
-                node.left.count -= 1 # just decrement count
-            
-            # handle delete node
-            if node.left.left is None:
-                node.left = node.right
-            if node.left.right is None:
-                node.left = node.left.left  
-            
-            return True
-
-        if node.right is not None and node.right.key == key:
-            if node.right.count > 1:
-                node.right.count -= 1
-
-            if node.right.left is None:
-                node.right = node.right.right
-            
-            if node.right.right is None:
-                node.right = node.right.left
-
-            return True
-        
-        if key < node.left.key:
-            return self._delete_node_by_key(node.left, key)
-        return self._delete_node_by_key(node.right, key)
+        return node
+    
+    def print_node(self, node: Node):
+        occurrences = ("(" + str(node.count) + ")" if node.count > 1 else "")
+        print(str(node.key) + occurrences)
 
 if __name__ == "__main__":
     tree = BST()
@@ -191,15 +180,18 @@ if __name__ == "__main__":
     # assert tree.get_max() == 35
 
     print("in order")
-    tree.in_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
-    # print("pre order")
-    # tree.pre_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
-    # print("post order")
-    # tree.post_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
+    tree.in_order_traverse(tree.print_node)
+    print("pre order")
+    tree.pre_order_traverse(tree.print_node)
+    print("post order")
+    tree.post_order_traverse(tree.print_node)
 
     tree.delete(8)
+    tree.delete(8)
+    tree.delete(8)
+    tree.delete(35)
     # tree.delete_all()
 
     print("in order")
-    tree.in_order_traverse(lambda node: print(str(node.key) + "(" + str(node.count) + ")"))
+    tree.in_order_traverse(tree.print_node)
 
