@@ -29,6 +29,7 @@ Personal implementations of algorithms and data structures in different language
 - [Leetcode - Best Time to Buy and Sell Stock](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/best_time_to_buy_stock.py)
 - [Leetcode - Palindrome Number](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/palindrome_number.py)
 - [Leetcode - Palindrome Linked List](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/palindrome_linked_list.py)
+- [Leetcode - Number of Islands](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/number_of_islands.py)
 
 ## [Go](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go/stack.go)
