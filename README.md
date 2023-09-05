@@ -32,6 +32,7 @@ Personal implementations of algorithms and data structures in different language
 - [Leetcode - Number of Islands](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/number_of_islands.py)
 - [Leetcode - Generate Parentheses](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/generate_parentheses/generate_parentheses.py)
 - [Leetcode - Jump Game](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/jump_game.py)
+- [Leetcode - Maximum Depth of Binary Tree](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/maximum-depth-of-binary-tree.py)
 
 ## [Go](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go/stack.go)

@@ -1,5 +1,6 @@
 go/*.out
 javascript/node_modules
 javascript/package-lock.json
+javascript/others
 python/__pycache__
 java/target
