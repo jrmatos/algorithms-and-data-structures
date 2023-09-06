@@ -33,6 +33,10 @@ Personal implementations of algorithms and data structures in different language
 - [Leetcode - Generate Parentheses](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/generate_parentheses/generate_parentheses.py)
 - [Leetcode - Jump Game](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/jump_game.py)
 - [Leetcode - Maximum Depth of Binary Tree](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/maximum-depth-of-binary-tree.py)
+- [Leetcode - Find a Corresponding Node of a Binary Tree in a Clone of That Tree](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree.py)
+- [Leetcode - Binary Tree Inorder Traversal](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/binary-tree-inorder-traversal.py)
+- [Leetcode - Binary Tree Preorder Traversal](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/binary-tree-preorder-traversal.py)
+- [Leetcode - Binary Tree Postorder Traversal](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/binary-tree-postorder-traversal.py)
 
 ## [Go](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go/stack.go)
