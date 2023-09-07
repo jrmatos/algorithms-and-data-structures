@@ -39,6 +39,7 @@ Personal implementations of algorithms and data structures in different language
 - [Leetcode - Binary Tree Preorder Traversal](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/binary-tree-preorder-traversal.py)
 - [Leetcode - Binary Tree Postorder Traversal](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/binary-tree-postorder-traversal.py)
 - [Leetcode - Same Tree](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/same_tree.py)
+- [Leetcode - Symmetric Tree](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/leetcode/symmetric-tree.py)
 
 ## [Go](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go)
 - [Stack](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/go/stack.go)
