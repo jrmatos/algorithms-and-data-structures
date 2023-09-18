@@ -19,6 +19,7 @@ Personal implementations of algorithms and data structures in different language
 - [Leetcode - Flatten Deeply Nested Array O(N^depth)](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/javascript/leetcode/2625.%20Flatten%20Deeply%20Nested%20Array/solution.js)
 
 ## [Python](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python)
+- [Doubly Linked List](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/doubly_linked_list.py)
 - [Binary Search](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/binary_search.py)
 - [Bubble Sort](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/bubble_sort.py)
 - [Quick Sort](https://github.com/jrmatos/algorithms-and-data-structures/blob/master/python/quick_sort.py)
